@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contacto - Patitas Felices</title>
+        <link rel="icon" href="img/icono.jpeg">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="img/icon.png" alt="Logo empresa"></h1>
+                <nav>
+                    <ul>
+                        <li ><a href="index.html">Inicio</a></li>
+                        <li><a href="Servicios.html">Servicios</a></li>
+                        <li><a href="Contacto.html">Contactanos</a></li>  
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for="nombreapellido">Nombre y apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required placeholder="Carlos Santa Ana">
+
+                <label for="correo">Correo electronico</label>
+                <input type="email" id="correo" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX)XXX XXX XXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required placeholder="Exelente servicio, 5 estrellas."></textarea>
+
+                <fieldset>
+                    <legend>¿Como le gustaría que lo contactemos?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Télefono</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>¿En cuál horario le gustaria ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería?</label>
+
+                <input type="submit" value="Enviar formulario" class="enviar">
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08:00 - 20:00 h</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>08:00 - 20:00 h</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08:00 - 20:00 h</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>08:00 - 20:00 h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08:00 - 18:00 h</td>
+                    </tr>
+                    <tr>
+                        <td>Sabado</td>
+                        <td>08:00 - 18:00 h</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>09:00 - 18:00 h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <img src="img/pFelizpng.png" alt="Imagen perro">
+            <p class="copyright">&copy Copyright Patitas Felices - 2024</p>
+        </footer>
+    </body>
+</html>
